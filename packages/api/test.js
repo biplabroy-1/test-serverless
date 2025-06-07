@@ -1,8 +1,8 @@
-import { sukaa } from "/shared/utils"
+import { main } from "shared/utils.js"
 
 export function main() {
     const name = "Test Item";
-    const slug = sukaa(name);
+    const slug = main(name);
     console.log(`Slug for "${name}": ${slug}`);
     return {
       headers: {
