@@ -1,0 +1,38 @@
+{
+  "name": "mongoose-crud-api",
+  "functions": [
+    {
+      "name": "api",
+      "source_dir": "api",
+      "github": {
+        "branch": "main",
+        "deploy_on_push": true,
+        "repo": "your-github-username/mongoose-crud-api"
+      },
+      "routes": [
+        {
+          "path": "/api",
+          "preserve_path_prefix": true
+        }
+      ],
+      "envs": [
+        {
+          "key": "MONGODB_URI",
+          "scope": "RUN_TIME",
+          "type": "SECRET"
+        },
+        {
+          "key": "JWT_SECRET",
+          "scope": "RUN_TIME",
+          "type": "SECRET"
+        },
+        {
+          "key": "NODE_ENV",
+          "scope": "RUN_TIME",
+          "type": "GENERAL",
+          "value": "production"
+        }
+      ]
+    }
+  ]
+}

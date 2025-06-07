@@ -1,9 +1,0 @@
-parameters: {}
-environment: {
-    MONGO_URI: "mongodb+srv://azmth:azmthadmin@cluster0.u4kdj.mongodb.net/test-db?retryWrites=true&w=majority&appName=Cluster0"
-}
-packages:
-    - name: sample
-      actions:
-      - name: hello
-        runtime: nodejs:default
