@@ -1,1 +1,1 @@
-import './api/index.js';
+import './packages/api/index.js';
