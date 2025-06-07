@@ -1,0 +1,1 @@
+export function sukaa(name) { return name.toLowerCase().replace(/ /g, '-'); };
