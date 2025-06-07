@@ -1,4 +1,4 @@
-import { sukaa } from "../config/utils"
+import { sukaa } from "/shared/utils"
 
 export function main() {
     const name = "Test Item";
